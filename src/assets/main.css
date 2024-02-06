@@ -1,0 +1,17 @@
+@import './base.css';
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.divider {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #666;
+}
+
+.divider:not(:first-child) {
+    margin-top: 20px;
+}
