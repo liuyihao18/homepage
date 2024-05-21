@@ -5,7 +5,7 @@
   <main>
     <div class="divider" />
     <div class="information-group">
-      <img class="avatar" src="./assets/images/avatar.jpg" alt="avatar" />
+      <img class="avatar" src="./assets/images/avatar1.jpg" alt="avatar" />
       <div class="information">
         <h1>
           Yihao Liu
@@ -44,6 +44,9 @@
       <h2>Publications</h2>
       <ul>
         <li v-for="paper in papers" :key="paper">
+          <span class="label">
+            [{{ paper.label }}]
+          </span>
           <a :href="paper.doi" target="_blank">
             {{ paper.title }}
           </a>
@@ -53,7 +56,7 @@
           </span>
           <span class="me" hidden></span>
           <br />
-          {{ paper.publication }}
+          In {{ paper.publication }}
         </li>
       </ul>
     </div>
@@ -132,6 +135,10 @@ h2 {
 ul {
   margin: 10px;
   padding-left: 25px;
+}
+
+.label {
+  color: red;
 }
 
 .me {
