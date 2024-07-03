@@ -25,7 +25,7 @@
     </div>
     <div class="divider" />
     <div class="interest-group">
-      <h2>Research Interest</h2>
+      <h2>Research Interests</h2>
       <ul>
         <li>Wireless Sensing</li>
         <li>Internet of Things</li>
@@ -33,10 +33,10 @@
     </div>
     <div class="divider" />
     <div class="education-group">
-      <h2>Education</h2>
+      <h2>Educations</h2>
       <ul>
-        <li>Master's Degree in Software Engineering from Tsinghua University, 2023 ~ Now</li>
-        <li>Bachelor's Degree in Software Engineering from Tsinghua University (Rank 1), 2018 ~ 2023</li>
+        <li>Master's Degree in Software Engineering from Tsinghua University, 2023 ~ Now.</li>
+        <li>Bachelor's Degree in Software Engineering from Tsinghua University (Rank 1), 2018 ~ 2023.</li>
       </ul>
     </div>
     <div class="divider" />
@@ -58,6 +58,13 @@
           <br />
           In {{ paper.publication }}
         </li>
+      </ul>
+    </div>
+    <div class="divider" />
+    <div class="honor-group">
+      <h2>Honors</h2>
+      <ul>
+        <li>Chinese National Scholarship for Undergraduates in 2020.</li>
       </ul>
     </div>
   </main>
