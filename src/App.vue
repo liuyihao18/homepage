@@ -47,9 +47,14 @@
           <span class="label">
             [{{ paper.label }}]
           </span>
-          <a :href="paper.doi" target="_blank">
-            {{ paper.title }}
-          </a>
+          <span class="title">
+            <a :href="paper.doi" target="_blank">
+              {{ paper.title }}
+            </a>
+          </span>
+          <span class="file">
+            [<a :href="'./papers/' + paper.file">PDF</a>]
+          </span>
           <br />
           <span v-for="(author, id) in paper.authors" :key="author" :class="author === 'Yihao Liu' ? 'me' : ''">
             {{ author }}{{ id + 1 === paper.authors.length ? '' : ', ' }}
@@ -64,7 +69,10 @@
     <div class="honor-group">
       <h2>Honors</h2>
       <ul>
-        <li>Chinese National Scholarship for Undergraduates in 2020.</li>
+        <li>Outstanding Graduate of Tsinghua University, 2023.</li>
+        <li>Outstanding Graduate of Beijing, 2023.</li>
+        <li>Outstanding Scholarship of Fujian Youth Talent Development Program, 2021.</li>
+        <li>Chinese National Scholarship for Undergraduates, 2020.</li>
       </ul>
     </div>
   </main>
@@ -94,45 +102,45 @@ main {
 .information-group {
   display: flex;
   flex-wrap: wrap;
-}
 
-.avatar {
-  width: 180px;
-  margin-left: 5%;
-  margin-right: 5%;
-}
+  .avatar {
+    width: 180px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-.information {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-}
+  .information {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 
-h1 {
-  margin-top: 20px;
-}
+    h1 {
+      margin-top: 20px;
 
-.orcid {
-  width: 20px;
-  vertical-align: top;
-}
+      .orcid {
+        width: 20px;
+        vertical-align: top;
+      }
+    }
 
-h3 {
-  margin: 0;
-  line-height: 32px;
-  font-style: italic;
-  font-weight: normal;
-  word-break: break-all;
-}
+    h3 {
+      margin: 0;
+      line-height: 32px;
+      font-style: italic;
+      font-weight: normal;
+      word-break: break-all;
+    }
+  }
 
-.starry-link {
-  display: block;
-  margin: auto 5% 0 auto;
-}
+  .starry-link {
+    display: block;
+    margin: auto 5% 0 auto;
 
-.starry {
-  width: 32px;
-  height: 32px;
+    .starry {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
 
 h2 {
@@ -146,6 +154,35 @@ ul {
 
 .label {
   color: red;
+  font-weight: bold;
+}
+
+.title {
+  a, a:visited {
+    color: blue;
+  }
+
+  a:hover {
+    color: #0033CC;
+  }
+
+  a:active {
+    color: #000080;
+  }
+}
+
+.file {
+  a, a:visited {
+    color: #28A745;
+  }
+
+  a:hover {
+    color: #218838;
+  }
+
+  a:active {
+    color: #1C7430;
+  }
 }
 
 .me {
