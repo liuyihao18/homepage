@@ -1,4 +1,4 @@
-const paper1 = {
+const LoMu = {
   title: 'LoMu: Enable Long-Range Multi-Target Backscatter Sensing for Low-Cost Tags',
   doi: 'https://doi.org/10.1109/INFOCOM52122.2024.10621272',
   authors: ['Yihao Liu', 'Jinyan Jiang', 'Jiliang Wang'],
@@ -7,25 +7,7 @@ const paper1 = {
   file: 'lomu.pdf'
 }
 
-const paper2 = {
-  title: 'Willow: Practical WiFi Backscatter Localization with Parallel Tags',
-  doi: 'https://doi.org/10.1145/3643832.3661853',
-  authors: ['Jinyan Jiang', 'Jiliang Wang', 'Yijie Chen', 'Shuai Tong', 'Pengjin Xie', 'Yihao Liu', 'Yunhao Liu'],
-  publication: 'Proceedings of the 22nd Annual International Conference on Mobile Systems, Applications and Services',
-  label: 'MobiSys 2024',
-  file: 'willow.pdf'
-}
-
-const paper3 = {
-  title: 'WiCloak: Protect Location Privacy of WiFi Devices',
-  doi: 'https://doi.org/10.1109/IPSN61024.2024.00013',
-  authors: ['Jinyan Jiang', 'Jiliang Wang', 'Yihao Liu', 'Yijie Chen', 'Yunhao Liu'],
-  publication: 'Proceedings of the 23rd International Conference on Information Processing in Sensor Networks',
-  label: 'IPSN 2024',
-  file: 'wicloak.pdf'
-}
-
-const paper4 = {
+const LocRa = {
   title: 'LocRa: Enable Practical Long-Range Backscatter Localization for Low-Cost Tags',
   doi: 'https://doi.org/10.1145/3581791.3596863',
   authors: ['Jinyan Jiang', 'Jiliang Wang', 'Yijie Chen', 'Yihao Liu', 'Yunhao Liu'],
@@ -34,6 +16,33 @@ const paper4 = {
   file: 'locra.pdf'
 }
 
-const papers = [paper1, paper2, paper3, paper4]
+const WiCloak = {
+  title: 'WiCloak: Protect Location Privacy of WiFi Devices',
+  doi: 'https://doi.org/10.1109/IPSN61024.2024.00013',
+  authors: ['Jinyan Jiang', 'Jiliang Wang', 'Yihao Liu', 'Yijie Chen', 'Yunhao Liu'],
+  publication: 'Proceedings of the 23rd International Conference on Information Processing in Sensor Networks',
+  label: 'IPSN 2024',
+  file: 'wicloak.pdf'
+}
+
+const Willow = {
+  title: 'Willow: Practical WiFi Backscatter Localization with Parallel Tags',
+  doi: 'https://doi.org/10.1145/3643832.3661853',
+  authors: ['Jinyan Jiang', 'Jiliang Wang', 'Yijie Chen', 'Shuai Tong', 'Pengjin Xie', 'Yihao Liu', 'Yunhao Liu'],
+  publication: 'Proceedings of the 22nd Annual International Conference on Mobile Systems, Applications and Services',
+  label: 'MobiSys 2024',
+  file: 'willow.pdf'
+}
+
+const LoMuTransaction = {
+  title: 'Enable Long-Range Multi-Target Backscatter Sensing',
+  doi: 'https://doi.org/10.1109/TMC.2024.3480137',
+  authors: ['Yihao Liu', 'Jinyan Jiang', 'Jumin Zhao', 'Jiliang Wang'],
+  publication: 'IEEE Transactions on Mobile Computing',
+  label: 'TMC',
+  file: 'lomu_transaction.pdf'
+}
+
+const papers = [LoMuTransaction, LoMu, Willow, WiCloak, LocRa]
 
 export default papers

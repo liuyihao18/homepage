@@ -19,9 +19,14 @@
           <h3><a href="mailto:liu-yh23@mails.tsinghua.edu.cn">liu-yh23@mails.tsinghua.edu.cn</a></h3>
         </div>
       </div>
-      <a class="starry-link" href="./starry">
-        <img class="starry" src="./assets/images/star.svg" alt="starry" />
-      </a>
+      <div class="my-world">
+        <a class="starry-link" href="./starry">
+          <img class="starry" src="./assets/images/star.svg" alt="starry" />
+        </a>
+        <a class="mildwind-link" href="./mildwind">
+          <img class="mildwind" src="./assets/images/wind.svg" alt="starry" />
+        </a>
+      </div>
     </div>
     <div class="divider" />
     <div class="interest-group">
@@ -52,9 +57,11 @@
               {{ paper.title }}
             </a>
           </span>
+          <!--
           <span class="file">
             [<a :href="'./papers/' + paper.file">PDF</a>]
           </span>
+          -->
           <br />
           <span v-for="(author, id) in paper.authors" :key="author" :class="author === 'Yihao Liu' ? 'me' : ''">
             {{ author }}{{ id + 1 === paper.authors.length ? '' : ', ' }}
@@ -99,46 +106,100 @@ main {
   background: #ffffff;
 }
 
-.information-group {
-  display: flex;
-  flex-wrap: wrap;
-
-  .avatar {
-    width: 180px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .information {
+@media (min-width: 750px) {
+  .information-group {
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
 
-    h1 {
-      margin-top: 20px;
+    .avatar {
+      width: 180px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
 
-      .orcid {
-        width: 20px;
-        vertical-align: top;
+    .information {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+
+      h1 {
+        margin-top: 20px;
+
+        .orcid {
+          width: 20px;
+          vertical-align: top;
+        }
+      }
+
+      h3 {
+        margin: 0;
+        line-height: 32px;
+        font-style: italic;
+        font-weight: normal;
+        word-break: break-all;
       }
     }
 
-    h3 {
-      margin: 0;
-      line-height: 32px;
-      font-style: italic;
-      font-weight: normal;
-      word-break: break-all;
+    .my-world {
+      margin-left: auto;
+
+      .starry-link, .mildwind-link {
+        display: block;
+
+        .starry, .mildwind {
+          width: 32px;
+          height: 32px;
+        }
+      }
     }
   }
+}
 
-  .starry-link {
-    display: block;
-    margin: auto 5% 0 auto;
+@media (max-width: 750px) {
+  .information-group {
+    text-align: center;
 
-    .starry {
-      width: 32px;
-      height: 32px;
+    .avatar {
+      width: 180px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .information {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+
+      h1 {
+        margin-top: 20px;
+
+        .orcid {
+          width: 20px;
+          vertical-align: top;
+        }
+      }
+
+      h3 {
+        margin: 0;
+        line-height: 32px;
+        font-style: italic;
+        font-weight: normal;
+        word-break: break-all;
+      }
+    }
+
+    .my-world {
+      margin-top: 10px;
+      display: block;
+
+      .starry-link, .mildwind-link {
+        margin: 5px;
+
+        .starry, .mildwind {
+          width: 32px;
+          height: 32px;
+        }
+      }
     }
   }
 }
