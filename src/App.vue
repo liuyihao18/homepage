@@ -76,6 +76,8 @@
     <div class="honor-group">
       <h2>Honors</h2>
       <ul>
+        <li>Tsinghua University Graduate Comprehensive Scholarship (First Class), 2025.</li>
+        <li>Tsinghua University Graduate Comprehensive Scholarship (First Class), 2024.</li>
         <li>Outstanding Graduate of Tsinghua University, 2023.</li>
         <li>Outstanding Graduate of Beijing, 2023.</li>
         <li>Outstanding Scholarship of Fujian Youth Talent Development Program, 2021.</li>
